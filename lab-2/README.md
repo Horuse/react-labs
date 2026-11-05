@@ -21,34 +21,34 @@ React»: сторінка «Команда проєкту». Інструкці�
 
 Заповніть за вкладкою **Components ⚛** у React DevTools (§4.6).
 
-```text
-App
-├── Header
-├── Card (Тімлід)
-│   └── Avatar
-└── Card (Команда)
-    ├── Profile (key="1")
-    │   └── Avatar
-    ├── Profile (key="2")
-    │   └── Avatar
-    ├── Profile (key="3")
-    │   └── Avatar
-    └── Profile (key="4")
-        └── Avatar
+```mermaid
+graph TD
+    App --> Header
+    App --> CardLead["Card (Тімлід)"]
+    App --> CardTeam["Card (Команда)"]
+    CardLead --> AvatarLead["Avatar"]
+    CardTeam --> Profile1["Profile (key=1)"]
+    CardTeam --> Profile2["Profile (key=2)"]
+    CardTeam --> Profile3["Profile (key=3)"]
+    CardTeam --> Profile4["Profile (key=4)"]
+    Profile1 --> Avatar1["Avatar"]
+    Profile2 --> Avatar2["Avatar"]
+    Profile3 --> Avatar3["Avatar"]
+    Profile4 --> Avatar4["Avatar"]
 ```
 
 ## Дерево залежностей модулів
 
 Заповніть за рядками `import` у файлах `src/` (§4.6).
 
-```text
-main.jsx
-├── index.css
-└── App.jsx
-    ├── components/Header.jsx
-    ├── components/Avatar.jsx
-    ├── components/Profile.jsx
-    │   └── components/Avatar.jsx
-    ├── components/Card.jsx
-    └── data.js
+```mermaid
+graph TD
+    main["main.jsx"] --> indexCss["index.css"]
+    main --> App["App.jsx"]
+    App --> Header["components/Header.jsx"]
+    App --> Avatar["components/Avatar.jsx"]
+    App --> Profile["components/Profile.jsx"]
+    App --> Card["components/Card.jsx"]
+    App --> data["data.js"]
+    Profile --> AvatarModule["components/Avatar.jsx"]
 ```
