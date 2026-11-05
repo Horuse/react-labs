@@ -1,57 +1,57 @@
 .app-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
 }
 
 .profile-card {
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 1.5rem;
-  background-color: #ffffff;
-  color: #1a202c;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  text-align: left;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    color: #1a202c;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 .profile-card h2 {
-  margin-top: 0;
-  color: #2b6cb0;
+    margin-top: 0;
+    color: #2b6cb0;
 }
 
 .profile-group {
-  margin: 0.5rem 0 1rem;
-  font-size: 1.1rem;
+    margin: 0.5rem 0 1rem;
+    font-size: 1.1rem;
 }
 
 .profile-skills h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 .profile-skills ul {
-  padding-left: 1.25rem;
-  margin: 0 0 1.5rem;
+    padding-left: 1.25rem;
+    margin: 0 0 1.5rem;
 }
 
 .profile-skills li {
-  margin-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 
 .like-button {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #ffffff;
-  background-color: #3182ce;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #3182ce;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .like-button:hover {
-  background-color: #2b6cb0;
+    background-color: #2b6cb0;
 }
