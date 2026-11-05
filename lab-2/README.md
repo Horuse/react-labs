@@ -23,6 +23,18 @@ React»: сторінка «Команда проєкту». Інструкці�
 
 ```text
 App
+├── Header
+├── Card (Тімлід)
+│   └── Avatar
+└── Card (Команда)
+    ├── Profile (key="1")
+    │   └── Avatar
+    ├── Profile (key="2")
+    │   └── Avatar
+    ├── Profile (key="3")
+    │   └── Avatar
+    └── Profile (key="4")
+        └── Avatar
 ```
 
 ## Дерево залежностей модулів
@@ -31,4 +43,12 @@ App
 
 ```text
 main.jsx
+├── index.css
+└── App.jsx
+    ├── components/Header.jsx
+    ├── components/Avatar.jsx
+    ├── components/Profile.jsx
+    │   └── components/Avatar.jsx
+    ├── components/Card.jsx
+    └── data.js
 ```
